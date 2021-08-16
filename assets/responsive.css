@@ -79,7 +79,6 @@
     .product-price{
         width: 60%;
         font-size: 1.7rem;
-        font-weight: 600;
     }
 
     .product-cart-buy{
@@ -117,6 +116,7 @@
 
     .news-detail{
         padding: 0 10px;
+        height: 115px;
     }
 
     /* About */
@@ -183,6 +183,9 @@
         height: 200px;
     }
     
+    .item__filter-heading-title-text{
+        font-size: 1.8rem;
+    }
 
     .item__filter-price{
         font-size: 1.7rem;
@@ -224,7 +227,7 @@
     .hide-on-tablet{
         display: none;
     }
-
+    
     /* -------------------------------Slider------------------------- */
     .sliders-wrap{
         max-height: 300px;
@@ -257,7 +260,7 @@
     }
     /* home-news */
     .news-detail{
-        height: 76px;
+        height: 70px;
     }
     /*  */
     .news-img img{
@@ -306,6 +309,7 @@
 
     .item__filter-heading-title-text{
         font-weight: 700;
+        font-size: 1.8rem;
         line-height: 2.6rem;
     }
     
@@ -316,10 +320,9 @@
 
     .item__filter-price{
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 500;
         height: 40px;
         width: 47%;
-        line-height: 3.8rem;
     }
 
     .item__filter-cart-buy i{

@@ -1,4 +1,6 @@
-
+.m-4{
+    margin: 0 !important;
+}
 .bttop{
     position: fixed;
     bottom: 40px;
@@ -624,7 +626,7 @@ span.minus, span.minus1{
 /* ================================================ */
 
 /*===================== Container================== */
-.container{
+.container1{
     position: relative;
     overflow: hidden;
 }
@@ -662,7 +664,7 @@ span.minus, span.minus1{
 
 
 .btn-slide span{
-    color: rgb(158, 149, 149);
+    color: rgb(169 164 164);
     font-size: 3.6rem;
     padding: 0 20px;
     opacity: 0.7;
@@ -779,6 +781,9 @@ span.minus, span.minus1{
     height: 30px;
 }
 
+.product-items-wrap{
+    padding: 0 20px;
+}
 .product-item{
     background-color: var(--color-white);
     margin-bottom: 20px;
@@ -846,15 +851,14 @@ span.minus, span.minus1{
 .product-price{
     background-color: var(--primary-color);
     font-size: 2.2rem;
-    line-height: 2.2rem;
-    font-weight: 400;
+    line-height: 4rem;
+    font-weight: 500;
     height: 40px;
     width: 50%;
     color: var(--color-white);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: center;
-    padding-top: 10px;
     z-index: 2;
 }
 
@@ -1040,7 +1044,7 @@ span.minus, span.minus1{
     margin: 0;
     padding: 10px;
     font-size: 1.5rem;
-    height: 115px;
+    height: 109px;
     overflow-y: hidden;
     font-weight: 400;
     line-height: 2rem;
@@ -1468,7 +1472,7 @@ h1, h2, h3, h4, h5{
 
 .product-category__heading{
     background-color: var(--main-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--color-white);
     padding: 10px;
     text-align: center;
@@ -1487,7 +1491,7 @@ h1, h2, h3, h4, h5{
 }
 
 .product-category-list_title{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--main-color);
     line-height: 2.5rem;
@@ -1516,7 +1520,7 @@ h1, h2, h3, h4, h5{
 }
 
 .product-category-item a{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 3rem;
     font-weight: 500;
     color: var(--main-color);
@@ -1583,7 +1587,7 @@ h1, h2, h3, h4, h5{
 
 .item__filter-heading-title-code{
     margin: 0;
-    font-size: 1.6rem !important;
+    font-size: 1.5rem !important;
 }
 
 .item__filter-price-action{
@@ -1596,7 +1600,7 @@ h1, h2, h3, h4, h5{
     background-color: var(--primary-color);
     color: var(--color-white);
     font-size: 2.2rem;
-    font-weight: 400;
+    font-weight: 500;
     height: 40px;
     width: 60%;
     text-align: center;
@@ -1650,7 +1654,7 @@ h1, h2, h3, h4, h5{
 
 .pagination-item-link{
     color: var(--color-white);
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 3rem;
     display: block;
     text-decoration: none;
@@ -1682,6 +1686,7 @@ h1, h2, h3, h4, h5{
 .product-img img{
     width: 100%;
     padding: 15px;
+    display: block;
 }
 .img-detail{
     display: block;
@@ -1909,7 +1914,7 @@ h1, h2, h3, h4, h5{
 }
 
 .post-comment{
-    width: 8%;
+    width: 10%;
     color: var(--color-white);
     height: 40px;
     font-size: 1.8rem;
@@ -1939,7 +1944,7 @@ h1, h2, h3, h4, h5{
 }
 .comment{
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-black);
     padding: 12px 0;
     background-color: #f8f8f8;
@@ -2097,7 +2102,7 @@ h1, h2, h3, h4, h5{
     display: none;
 }
 .account-form-outer{
-    width: 35%;
+    width: 30%;
     margin: 20px auto;
     border-top: 1px solid #dfdfdfd7;
 }

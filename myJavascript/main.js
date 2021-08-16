@@ -1,24 +1,24 @@
 $(document).ready(function() {
 	// slideshow auto
    function myFunc(){
-      var slide_sau = $('.active').next();
+      var slide_sau = $('.active').next()
 		if(slide_sau.length!=0){
 			$('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function(event) {
 				$('.bien-mat-ben-trai').removeClass('bien-mat-ben-trai').removeClass('active')
-			});
+			})
 			slide_sau.addClass('active').addClass('di-vao-ben-phai').one('webkitAnimationEnd', function(event) {
 				$('.di-vao-ben-phai').removeClass('di-vao-ben-phai');
-			});
+			})
 		}else{
 			$('.active').addClass('bien-mat-ben-trai').one('webkitAnimationEnd', function(event) {
 				$('.bien-mat-ben-trai').removeClass('bien-mat-ben-trai').removeClass('active')
-			});
+			})
 			$('.slide:first-child').addClass('active').addClass('di-vao-ben-phai').one('webkitAnimationEnd', function(event) {
 				$('.di-vao-ben-phai').removeClass('di-vao-ben-phai');
-			});
+			})
 		}
    }
-   setInterval(myFunc, 4500);
+   setInterval(myFunc, 4500)
    
 
 // btn next and prev
@@ -41,7 +41,7 @@ $(document).ready(function() {
 			$('.di-vao-ben-phai').removeClass('di-vao-ben-phai')
 		})
 	}
-   });
+   })
 
    $("#btn-prev").click(function (e) { 
 	   
@@ -62,7 +62,7 @@ $(document).ready(function() {
 				$('.di-vao-ben-trai').removeClass('di-vao-ben-trai')
 			})
 		}
-   });
+   })
 
 
    //create btn back to top
