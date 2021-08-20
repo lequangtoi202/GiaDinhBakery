@@ -749,6 +749,8 @@ span.minus, span.minus1{
     background-color: var(--background-color);
 }
 .home-product-head__background{
+    background: url(../img/home-product-background.jpg) no-repeat fixed;
+    background-size: cover;
     position: relative;
 }
 .home-product-overlay{
@@ -909,7 +911,8 @@ span.minus, span.minus1{
 .home-order{
     width: 100%;
     height: 100%;
-    
+    background: url(../img/order.jpg) no-repeat fixed;
+    background-size: cover;
 }
 
 .inner{
@@ -1114,8 +1117,10 @@ span.minus, span.minus1{
 .footer-background{
     width: 100%;
     height: 100%;
-    
-   
+    background-image: url(../img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
