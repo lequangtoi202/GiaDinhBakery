@@ -18,7 +18,7 @@ $(document).ready(function() {
 			})
 		}
    }
-   setInterval(myFunc, 4500)
+   setInterval(myFunc, 5000)
    
 
 // btn next and prev
@@ -506,7 +506,9 @@ $(document).ready(function() {
 	function changePage(product1){
 		const currentPages = $('.number-page .pagination-item')
 		for (let i = 0; i < currentPages.length; i++){
-			$(currentPages[i]).click(function (){
+			$(currentPages[i]).click(function (event)
+			{
+				event.preventDefault()
 				let val  = i + 1
 			
 				const current = $('.pagination-item--active')
@@ -529,7 +531,9 @@ $(document).ready(function() {
 	renderProduct(product1)
 	
 	// Bấm bên trên thanh category
-	$('.cake1').click(() => {
+	$('.cake1').click((event) => {
+		
+		event.preventDefaul
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -539,7 +543,8 @@ $(document).ready(function() {
 		changePage(product1);
 		renderProduct(product1);
 	})
-	$('.cake2').click(() => {
+	$('.cake2').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -549,7 +554,8 @@ $(document).ready(function() {
 		changePage(product2);
 		renderProduct(product2);
 	})
-	$('.cake3').click(() => {
+	$('.cake3').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -559,7 +565,8 @@ $(document).ready(function() {
 		changePage(product3);
 		renderProduct(product3);
 	})
-	$('.cake4').click(() => {
+	$('.cake4').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -569,7 +576,8 @@ $(document).ready(function() {
 		changePage(product4);
 		renderProduct(product4);
 	})
-	$('.cake5').click(() => {
+	$('.cake5').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -579,7 +587,8 @@ $(document).ready(function() {
 		changePage(product5);
 		renderProduct(product5);
 	})
-	$('.cake6').click(() => {
+	$('.cake6').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -589,7 +598,8 @@ $(document).ready(function() {
 		changePage(product6);
 		renderProduct(product6);
 	})
-	$('.drink1').click(() => {
+	$('.drink1').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -599,7 +609,8 @@ $(document).ready(function() {
 		changePage(drink1);
 		renderProduct(drink1);
 	})
-	$('.drink2').click(() => {
+	$('.drink2').click((event) => {
+		
 		let currentPg = 1;
 		start = 0;
 		end = perPage;
@@ -609,7 +620,8 @@ $(document).ready(function() {
 		changePage(drink2);
 		renderProduct(drink2);
 	})
-	$('.drink3').click(() => {
+	$('.drink3').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -619,7 +631,8 @@ $(document).ready(function() {
 		changePage(drink3);
 		renderProduct(drink3);
 	})
-	$('.drink5').click(() => {
+	$('.drink5').click((event) => {
+		
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -631,7 +644,8 @@ $(document).ready(function() {
 	})
 	// Bấm bên dưới danh mục sản phẩm
 	//danh sách sản phẩm <li>1
-	$('#cake1').click(() =>{
+	$('#cake1').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPage = 1;
 		start = 0;
@@ -684,7 +698,8 @@ $(document).ready(function() {
 		// });
 		
 	})
-	$('#cake2').click(() =>{
+	$('#cake2').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPg = 1;
 		start = 0;
@@ -696,7 +711,8 @@ $(document).ready(function() {
 		renderProduct(product2);
 		
 	})
-	$('#cake3').click(() =>{
+	$('#cake3').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPg = 1;
 		start = 0;
@@ -707,7 +723,8 @@ $(document).ready(function() {
 		changePage(product3);
 		renderProduct(product3);
 	})
-	$('#cake4').click(() =>{
+	$('#cake4').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		//btnNext.removeClass('btn-active');
 		let currentPage = 1;
@@ -719,7 +736,8 @@ $(document).ready(function() {
 		changePage(product4);
 		renderProduct(product4);
 	})
-	$('#cake5').click(() => {
+	$('#cake5').click((event) => {
+		event.preventDefault()
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -729,7 +747,8 @@ $(document).ready(function() {
 		changePage(product5);
 		renderProduct(product5);
 	})
-	$('#cake6').click(() => {
+	$('#cake6').click((event) => {
+		event.preventDefault()
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -740,7 +759,8 @@ $(document).ready(function() {
 		renderProduct(product6);
 	})
 	//đồ uống
-	$('#drink1').click(() =>{
+	$('#drink1').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPg = 1;
 		start = 0;
@@ -751,7 +771,8 @@ $(document).ready(function() {
 		changePage(drink1);
 		renderProduct(drink1);
 	})
-	$('#drink2').click(() =>{
+	$('#drink2').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPg = 1;
 		start = 0;
@@ -762,7 +783,8 @@ $(document).ready(function() {
 		changePage(drink2);
 		renderProduct(drink2);
 	})
-	$('#drink3').click(() =>{
+	$('#drink3').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPg = 1;
 		start = 0;
@@ -773,7 +795,8 @@ $(document).ready(function() {
 		changePage(drink3);
 		renderProduct(drink3);
 	})
-	$('#drink5').click(() =>{
+	$('#drink5').click((event) =>{
+		event.preventDefault()
 		//reset lại khi chọn trang khác
 		let currentPg = 1;
 		start = 0;
@@ -792,10 +815,11 @@ $(document).ready(function() {
 	// ====================PRODUCT DETAIL==========
 
 	const imgDetail = $('.product-img img')
-	$('.product-item').click(function() {
+	$('.product-item').click(function(event) {
+		event.preventDefault()
 		var imgChange = $(this).children('.product-item_img').children('img').attr('src')
 		imgDetail.attr('src', imgChange)
-
+		
 		var text = $(this).children('.product-item_name').children('a').text()
 		var codeProduct = $(this).children('.product-item_name').children('p').text()
 		var price = $(this).children('.product-price_action').children('.product-price').text()
@@ -803,7 +827,6 @@ $(document).ready(function() {
 		$('.product-detail--code').text(codeProduct)
 		$('.product-detail--price').text(price + '/')
 		$('.product-title-text').text(text)
-
 	})
 	
 	const items = [
@@ -886,7 +909,8 @@ $(document).ready(function() {
 	render()
 
 	//chuyển từ tab miêu tả chung sang tab bình luận
-	$('.button-tab').click(function(){
+	$('.button-tab').click(function(event){
+		event.preventDefault()
 		var idContent = $(this).attr('href')
 
 		$('.button-tab').removeClass('tab-active')
@@ -962,7 +986,8 @@ $(document).ready(function() {
 	// -----------POLICY PAGE
 	const policies = $('.footer-item a');
 	for (let i = 0; i < policies.length; i++){
-		$(policies[i]).click(() => {
+		$(policies[i]).on('click', (event) => {
+			
 			const Class = $(policies[i]).attr('class')// lấy class
 			const policyId = $('.policy')
 			var text = $(policies[i]).text()
@@ -978,11 +1003,13 @@ $(document).ready(function() {
 	}
 
 	// ấn đăng nhập thì ẩn đăng kí và ngược lại
-	$('.login').click(function (){
+	$('.login').click(function (event){
+		event.preventDefault()
 		$('.sign-up-outer').css('display', 'none')
 		$('.log-in-outer').css('display', 'block')
 	})
-	$('.signup').click(function (){
+	$('.signup').click(function (event){
+		event.preventDefault()
 		$('.sign-up-outer').css('display', 'block')
 		$('.log-in-outer').css('display', 'none')
 	})
@@ -1001,7 +1028,7 @@ $(document).ready(function() {
 
 
 	// item setup per slide
-	responsive=[
+	responsive = [
 		{breakPoint:{width:0,item:2}}, 
 		{breakPoint:{width:600,item:3}},
 		{breakPoint:{width:1000,item:4}} 
