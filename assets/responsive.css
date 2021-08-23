@@ -243,6 +243,9 @@
   .layout-item-img img {
     height: 205px;
   }
+  .layout-item-img.large-img img {
+    height: 380px;
+  }
 }
 
 /* TABLET */
