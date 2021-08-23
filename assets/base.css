@@ -1,0 +1,20 @@
+:root {
+  --main-color: #5b3236;
+  --text-color: #333;
+  --header-height: 140px;
+  --color-white: #fff;
+  --color-black: #000;
+  --background-color: #f8f2e8;
+  --primary-color: #c0c906;
+  --height-with-search: calc(var(--header-height) - 52px);
+}
+* {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", "sans-serif";
+  box-sizing: border-box;
+}
