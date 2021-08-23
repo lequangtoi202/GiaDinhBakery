@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Đình Bakery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/base.css">
+    <link rel="stylesheet" href="assets/grid.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <link rel="shortcut icon" href="img/logo.jpg">
+    <script src="https://kit.fontawesome.com/cb149d0c94.js" crossorigin="anonymous"></script>
+    <script src="myJavascript/jquery3.6.js"></script>
+    <script src="myJavascript/main.js"></script>
+    
+</head>
+<body>
+    <div class="app">
+        <div class="menu-mobile-overlay"></div>
+        <button class="bttop"><i class="fas fa-chevron-up"></i></button>
+        <div class="ring-ring-phone">
+            <div class="circle-small"></div>
+            <div class="circle-large"></div>    
+            <div class="phone">
+                <a href="tel:083 9010 203">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="grid wide">
+                <nav class="nav hide-on-mobile-tablet">
+                    <ul class="nav-left">
+                        <li >
+                            <a href="tel:083 9010 203"><i class="fas fa-phone"></i>0839010203</a>
+                        </li>
+                        <li>
+                            <a href="branch.html"><i class="fas fa-building"></i>3 cửa hàng</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+                        <li>
+                            <a href="index.html#about"><i class="fas fa-info-circle"></i></i>Thông tin</a>
+                        </li>
+                        <li class="right">
+                            <a href="#"><i class="far fa-question-circle"></i>Hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a href="#" id="account"><i class="far fa-user-circle"></i>Tài khoản</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header mobile -->
+                <div class="header-mobile-wrap">
+                    <div class="header-mobile">
+                        <div class="header-category">
+                            <label class="header-mobile-category">
+                                <i class="header-category-icon fas fa-bars"></i>
+                            </label>
+                        </div>
+
+                        <div class="header-logo-mobile">
+                            <a href="index.html" class=""><img src="./img/logo.jpg" alt="logo"></a>
+                        </div>
+
+                        <label for="mobile-search-checkbox" class="header-mobile-search">
+                            <i class=" fas fa-search"></i>
+                        </label>
+                    </div>
+                    
+                    <div class="mobile-main-menu-wrap">
+                        <ul class="mobile-main-menu">
+                            <li>
+                                <div class="header-logo-mobile">
+                                    <a href="index.html" class=""><img src="./img/logo.jpg" alt=""></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="index.html">
+                                    <i class="fas fa-home"></i>
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="accordion">
+                                <a href="#">
+                                    <i class="fas fa-birthday-cake"></i>
+                                    Các loại bánh
+                                    <span class="plus">&plus;</span>
+                                    <span class="minus">&minus;</span>
+                                </a>
+                                <ul class="accordion-list">
+                                    <li class="accordion-item">
+                                        <a href="product.html#cake1" class="cake1">Gateaux Kem Tươi </a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#cake2" class="cake2">Gateaux Kem Bơ</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#cake3" class="cake3">Bánh Mousse</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#cake4" class="cake4">Bánh In Ảnh & Bánh Sự Kiện</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#cake5" class="cake5">Bánh Mặn</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#cake6" class="cake6">TeaBreak</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="accordion1">
+                                <a href="#">
+                                    <i class="fas fa-mug-hot"></i>
+                                    Nước uống
+                                    <span class="plus1">&plus;</span>
+                                    <span class="minus1">&minus;</span>
+                                </a>
+                                <ul class="accordion-list1">
+                                    <li class="accordion-item">
+                                        <a href="product.html#drink1" class="drink1">Trà hoa quả</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#drink2" class="drink2">Soda</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#drink3" class="drink3">Nước ép</a>
+                                    </li>
+                                    <li class="accordion-item">
+                                        <a href="product.html#drink5" class="drink5">Coffee</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="index.html#news">
+                                    <i class="fas fa-rss-square"></i>
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li>
+                                <a href="saleOff.html">
+                                    <i class="fas fa-tags"></i>
+                                    Khuyến Mãi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="account.html">
+                                    <i class="far fa-user-circle"></i>
+                                    Tài khoản
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="side-to-left"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- ======================== -->
+                <input type="checkbox" hidden id="mobile-search-checkbox" class="header-search-checkbox">
+                <div class="header-with-search">
+                    <div class="logo-img hide-on-mobile-tablet">
+                        <a href="index.html">
+                            <img src="./img/logo.jpg" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="search">
+                        <div class="search-wrap">
+                            <input type="search" class="search-field" placeholder="Nhập để tìm kiếm...">
+                            <div class="history">
+                                <h3 class="history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="history-list">
+                                    <li class="history-list-item">
+                                        <a href="product.html"><i class="fas fa-history"></i>Bánh Gato</a>
+                                        <span class="delete">&times;</span>
+                                    </li>
+                                    <li class="history-list-item">
+                                        <a href="product.html"><i class="fas fa-history"></i>Bánh kem sinh nhật</a>
+                                        <span class="delete">&times;</span>
+                                    </li>
+                                    <li class="history-list-item">
+                                        <a href="product.html"><i class="fas fa-history"></i>Bánh uống trà</a>
+                                        <span class="delete">&times;</span>
+                                    </li>
+                                    <li class="history-list-item">
+                                        <a href="product.html"><i class="fas fa-history"></i>Bánh bông lan</a>
+                                        <span class="delete">&times;</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                        
+                    </div>
+                    <div class="shopping-bag hide-on-mobile">
+                        <a href="#">
+                            <i class="fas fa-shopping-bag"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- category -->
+                <div class="category-wrap hide-on-mobile">
+                    <ul class="category-list">
+                        <li class="category-list-item" >
+                            <a href="index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="category-list-item dropdown" id="product-page" >
+                            <a href="product.html">
+                                CÁC LOẠI BÁNH
+                                <i class="dropdown-icon fa fa-angle-down" ></i>
+                            </a>
+                            <ul class="dropdown-list">
+                                <li class="dropdown-item">
+                                    <a href="product.html#cake1" class="cake1">Gateaux Kem Tươi </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#cake2" class="cake2">Gateaux Kem Bơ</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#cake3" class="cake3">Bánh Mousse</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#cake4" class="cake4">Bánh In Ảnh & Bánh Sự Kiện </a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#cake5" class="cake5">Bánh Mặn</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#cake6" class="cake6">TeaBreak</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="category-list-item dropdown">
+                            <a href="product.html">
+                                NƯỚC UỐNG
+                                <i class="dropdown-icon fa fa-angle-down" ></i>
+                            </a>
+                            <ul class="dropdown-list1">
+                                <li class="dropdown-item">
+                                    <a href="product.html#drink1" class="drink1">Trà hoa quả</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#drink3" class="drink3">Nước ép</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#drink2" class="drink2">Soda</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="product.html#drink5" class="drink5">Coffee</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="category-list-item">
+                            <a href="index.html#news">TIN TỨC</a>
+                        </li>
+                        <li class="category-list-item">
+                            <a href="saleOff.html">KHUYẾN MÃI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="home-product-container">
+            <div class="home-product-head__background">
+                <div class="home-product-overlay"></div>
+                <div class="head-of-product-title">
+                    <h2 class="product-title-text" style="text-transform: uppercase;">KHUYẾN MÃI</h2>
+                </div>
+            </div>
+            <div class="layout-saleOff-container">
+                <h3 class="heading">KHUYẾN MÃI</h3>
+                <div class="layout-saleOff">
+                    <div class="layout-item">
+                        <div class="layout-item-img">
+                            <img src="./img/sale2.jpg" alt="img-item">
+                        </div>
+                        <div class="layout-item-content">
+                            <div class="layout-item-content__title">
+                                <a href="#">#KHAI_TRƯƠNG_CƠ_SỞ_THỨ 1 tại 14/4 #DƯƠNG CÁT LỢI 𝗡𝗴𝗮̀𝘆 16/7/2019</a>
+                            </div>
+                            <div class="comments">
+                                <a href="#">
+                                    <i class="far fa-comment-dots"></i>
+                                    10 Bình luận
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="content">
+                                    #KHAI_TRƯƠNG_CƠ_SỞ_THỨ 1 #TÔ_HIỆU_HÀ_ĐÔNG Ngày 16/7/2019
+                                    Cảm ơn Quý khách hàng đã luôn đồng hành cùng Gia Đình Bakery trong suốt thời gian qua. Và để đáp ứng nhu cầ...
+                                </div>
+                                <time>JULY 16, 2019</time>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="layout-item">
+                        <div class="layout-item-img small-img">
+                            <img src="./img/sale1.png" alt="img-item">
+                        </div>
+                        <div class="layout-item-content">
+                            <div class="layout-item-content__title">
+                                <a href="#">Free Ship Ngay</a>
+                            </div>
+                            <div class="comments">
+                                <a href="#">
+                                    <i class="far fa-comment-dots"></i>
+                                    14 Bình luận
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="content">
+                                    #ANH_HÒA_BAKERY #FREESHIP_NGAY - #CHUNG_TAY_CHỐNG_DỊCH.️💥 Để bạn vẫn có thể thưởng thức được những chiếc bánh kem nhà Gia Đình Bakery trong thời điểm ảnh hưởng vì dịch bệnh, chú...
+                                </div>
+                                <time>SEP 12, 2020</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-item">
+                        <div class="layout-item-img">
+                            <img src="./img/sale3.jpg" alt="img-item">
+                        </div>
+                        <div class="layout-item-content">
+                            <div class="layout-item-content__title">
+                                <a href="#">BÁNH NGON MÊ LY - TẾT THIẾU NHI...</a>
+                            </div>
+                            <div class="comments">
+                                <a href="#">
+                                    <i class="far fa-comment-dots"></i>
+                                    5 Bình luận
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="content">
+                                    💥 Ngày Quốc tế thiếu nhi sắp đến, các bố mẹ hẳn đang rất băn khoăn vì không biết chọn quà như thế nào để thể hiện sự yêu thương dành cho các bé ?🎉🎉🎉 Đôi khi những món quà đắ...
+                                </div>
+                                <time>FEB 21, 2021</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-item">
+                        <div class="layout-item-img large-img">
+                            <img src="./img/sale4.png" alt="img-item">
+                        </div>
+                        <div class="layout-item-content">
+                            <div class="layout-item-content__title">
+                                <a href="#">KHAI TRƯƠNG CƠ_SỞ_THỨ 14  16 BẾN VÂN...</a>
+                            </div>
+                            <div class="comments">
+                                <a href="#">
+                                    <i class="far fa-comment-dots"></i>
+                                    43 Bình luận
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="content">
+                                    KHAI TRƯƠNG CƠ_SỞ_THỨ 2, 16 Bến Vân Đồn, Phường 12, Quận 4, Thành phố Hồ Chí Minh 20/06/2021 
+                                    Cảm ơn Quý khách hàng đã luôn đồng hành cùng Gia Đình Bakery trong suốt thời gian qua. Và để đáp ứng nhu ...
+                                </div>
+                                <time>JUNE 20, 2021</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layout-item">
+                        <div class="layout-item-img">
+                            <img src="./img/sale5.png" alt="img-item">
+                        </div>
+                        <div class="layout-item-content">
+                            <div class="layout-item-content__title">
+                                <a href="#">𝐇𝐀𝐏𝐏𝐘 𝐌𝐎𝐓𝐇𝐄𝐑'𝐒 𝐃𝐀𝐘 𝟏𝟎.𝟓</a>
+                            </div>
+                            <div class="comments">
+                                <a href="#">
+                                    <i class="far fa-comment-dots"></i>
+                                    18 Bình luận
+                                </a>
+                            </div>
+                            <div class="post-content">
+                                <div class="content">
+                                    "Con dù lớn vẫn là con của mẹ Đi hết đời, lòng mẹ vẫn theo con"Ngày của Mẹ đã sắp đến rồi! Năm nay sẽ là ngày 10/5 đó mọi người ạ. Ngày của Mẹ hay Ngày Hiền Mẫu là một ngày kỷ n...
+                                </div>
+                                <time>MAY 10, 2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <footer class="footer">
+            <div class="footer-background">
+                <div class="footer-overlay"></div>
+                <div class="grid wide">
+                    <div class="footer-wrap row sm-gutter">
+                        <div class="col l-3 m-4 c-6">
+                            <div class="footer-logo">
+                                <a title="Tiệm bánh gia đình" href="index.html">
+                                    <img src="./img/logo.jpg" alt="" class="footer-logo_img">
+                                </a>
+                            </div>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="branch.html">
+                                        <i class="fas fa-map-marked-alt"></i>
+                                        14/4 Dương Cát Lợi, Khu phố 4, Thị trấn Nhà Bè, Huyện Nhà Bè, TP.Hồ Chí Minh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:0839010203">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        0839010203
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:toiquangle@gmail.com">
+                                        <i class="fas fa-envelope"></i>
+                                        toilq202@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <h3 class="heading-title">Đặt hàng qua</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <a href="https://food.grab.com/vn/vi/" target="_blank">
+                                        <img src="./img/grabfood.jpg" alt="">
+                                    </a>
+                                    <a href="https://baemin.vn/" target="_blank">
+                                        <img src="./img/beamin.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.foody.vn/ha-noi" target="_blank">
+                                        <img src="./img/foody.jpg" alt="">
+                                    </a>
+                                    <a href="https://www.gojek.com/vn/" target="_blank">
+                                        <img src="./img/gojeck.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <h3 class="heading-title">Chính sách</h3>
+                            <ul class="footer-list">
+                                <li class="footer-item">
+                                    <a class="terms-and-services-policy" href="policy.html#terms-and-services-policy">Điều khoản dịch vụ</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="security-policy" href="policy.html#security-policy">Chính sách bảo mật</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="payment-policy" href="policy.html#payment-policy">Chính sách thanh toán, giao dịch</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="transfer-policy" href="policy.html#transfer-policy"> Chính sách vận chuyển</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="return-goods-policy" href="policy.html#return-goods-policy">Chính sách đổi trả</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col l-3 m-4 c-6">
+                            <h3 class="heading-title">THEO DÕI</h3>
+                            <div class="footer-list">
+                                <div class="media-icon">
+                                    <a href="https://www.facebook.com/">
+                                        <i class="fb fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/">
+                                        <i class="in fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/">
+                                        <i class="you fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                                <div class="media-icon">
+                                    <a href="https://www.linkedin.com/">
+                                        <i class="lin fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://twitter.com/?lang=vi">
+                                        <i class="twi fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.google.com.vn/?hl=vi">
+                                        <i class="gg fab fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="license-logo">
+                                <img src="//theme.hstatic.net/1000313040/1000406925/14/hg_img_thumb1.png?v=1719" alt="Bộ công thương">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer_bottom">
+                <div class="grid wide">
+                    <div class="footer-text">Coppyright &copy;2021 All rights reserved | Made by LQT</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal_overlay"></div>
+        <div class="modal_body">
+            <button class="close">X</button>
+            <div class="modal_inner">
+                <div class="auth-form-container">
+                    <div class="auth-form_heading">
+                        <div class="login">Đăng nhập</div>
+                        <div class="sign-up"><a href="account.html">Đăng ký</a></div>
+                    </div>
+                    <form action="#" class="auth-form_wrap">
+                        <div class="auth-form-gr">
+                            <label for="">Nhập tên đăng nhập:</label>
+                            <input type="text" class="username" required placeholder="Nhập tên đăng nhập">
+                        </div>
+                        <div class="auth-form-gr">
+                            <label for="">Nhập mật khẩu:</label>
+                            <input type="password" class="password" required placeholder="Nhập mật khẩu">
+                        </div>
+                    </form>
+                    <p class="forget-pass"><a href="#">Quên mật khẩu?</a></p>
+                    <div class="btn-controls">
+                        <button type="submit" class="btn-normal"><a href="index.html">TRỞ LẠI</a></button>
+                        <button type="submit" class="btn-login">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="link-to-media">
+               <a href="#" class="social-fb">
+                <i class="auth-form-socials-icon fab fa-facebook-square"></i>
+                   <span> Kết nối với facebook</span>
+               </a>
+               <a href="#" class="social-gg">
+                <i class="auth-form-socials-icon fab fa-google-plus-g"></i>
+                <span>Kết nối với Google</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
