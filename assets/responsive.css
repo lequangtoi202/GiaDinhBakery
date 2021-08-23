@@ -222,7 +222,7 @@
     padding: 0 20px;
     grid-template-columns: 1fr;
     justify-content: center;
-    grid-template-rows: repeat(4, 500px) 700px;
+    grid-template-rows: repeat(4, 470px) 600px;
     grid-template-areas: "h1" "h2" "h3" "h5" "h4";
   }
   .layout-item:nth-child(4) {
@@ -244,7 +244,7 @@
     height: 205px;
   }
   .layout-item-img.large-img img {
-    height: 380px;
+    height: 290px !important;
   }
 }
 
