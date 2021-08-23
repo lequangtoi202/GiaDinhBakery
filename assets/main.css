@@ -2259,7 +2259,7 @@ h5 {
 .layout-saleOff {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 480px 600px;
+  grid-template-rows: 510px 600px;
   grid-template-areas: "h1 h2 h3" " h4 h5 ...";
   grid-gap: 30px;
   padding: 0 70px;
