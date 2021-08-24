@@ -534,7 +534,7 @@ span.minus1 {
 .category-list-item::after {
   content: "";
   position: absolute;
-  width: 90%;
+  width: 100%;
   height: 2px;
   left: 0;
   top: 15px;
