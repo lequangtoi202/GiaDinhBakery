@@ -739,6 +739,7 @@ span.minus1 {
 .home-product-head__background {
   background: url(../img/home-product-background.jpg) no-repeat fixed;
   background-size: cover;
+  background-position: center;
   position: relative;
   opacity: 0.9;
 }
