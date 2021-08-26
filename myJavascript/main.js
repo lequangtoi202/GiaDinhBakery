@@ -78,14 +78,21 @@ $(document).ready(function() {
 		
 	})
 
-	$(".bttop").click(function (e) {
+	$(".bttop").click(function (e){
 		$('html, body').animate(
 			{
 				scrollTop: 0
 			}, 800)
-		})
+		e.preventDefault()
+		
+	})
 
-
+	//liên kết news khi trên mobile
+	$('.news').click(() =>{
+		$('.menu-mobile-overlay').hide()
+		$('.mobile-main-menu-wrap').hide()
+		$("a").attr("href", "#news")
+	})
 	//focus input thì hiện <> ẩn
 	$('.search-field').focus(function() {
 		$('.history').show()
