@@ -1888,6 +1888,7 @@ h5 {
 .sort-select {
   font-size: 1.6rem;
   width: 80px;
+  outline: none;
 }
 .comments-area {
   padding-top: 15px;
