@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .m-4 {
   margin: 0 !important;
 }
