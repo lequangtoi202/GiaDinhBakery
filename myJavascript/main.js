@@ -81,8 +81,9 @@ $(document).ready(function() {
 	$(".bttop").click(function (e){
 		$('html, body').animate(
 			{
-				scrollTop: 0
-			}, 800)
+				scrollTop: 0,
+				behavior: 'smooth'
+			},0)
 		
 	})
 

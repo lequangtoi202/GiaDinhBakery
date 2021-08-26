@@ -1,5 +1,5 @@
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 .m-4 {
   margin: 0 !important;
@@ -1848,6 +1848,7 @@ h5 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   line-height: 4rem;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -1865,6 +1866,7 @@ h5 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   line-height: 4rem;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -1874,7 +1876,7 @@ h5 {
 }
 .wrapper1 {
   overflow: hidden;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--main-color);
   border-bottom: 1px solid #dfdfdfd7;
   padding-bottom: 15px;
@@ -1883,7 +1885,10 @@ h5 {
   align-items: center;
   justify-content: space-between;
 }
-
+.sort-select {
+  font-size: 1.6rem;
+  width: 80px;
+}
 .comments-area {
   padding-top: 15px;
   position: relative;
@@ -1923,13 +1928,15 @@ h5 {
 .comments-detail > h3 {
   font-size: 2rem;
   font-weight: 600;
-  margin: 8px;
+  margin-bottom: 8px;
+  padding-left: 12px;
 }
 .comment {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  border-radius: 20px;
   font-weight: 400;
   color: var(--color-black);
-  padding: 12px 0;
+  padding: 12px 0 12px 12px;
   background-color: #f8f8f8;
   margin-bottom: 8px;
 }
