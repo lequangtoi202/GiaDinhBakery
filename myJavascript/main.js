@@ -91,7 +91,7 @@ $(document).ready(function() {
 	$('.news').click(() =>{
 		$('.menu-mobile-overlay').hide()
 		$('.mobile-main-menu-wrap').hide()
-		$("a").attr("href", "#news")
+		$(".news").attr("href", "#news")
 	})
 	//focus input thì hiện <> ẩn
 	$('.search-field').focus(function() {
@@ -1096,4 +1096,55 @@ $(document).ready(function() {
 		})
 	}
 	load()
+
+
+	// SCROLL EFFECT
+	$(window).on('scroll',() => {
+		const reveals = $('.reveal')
+		const leftFadeIn = $('.scroll-left')
+		const rightFadeIn = $('.scroll-right')
+		const window_height = $(window).height()
+		const window_top_position = $(window).scrollTop()
+		const plusHeight = window_height - 100
+		const window_bottom_position = (window_top_position + plusHeight)
+		
+		$.each(reveals, function() {
+			var element = $(this)
+			var element_top_position = element.offset().top
+			
+			//kiểm tra vị trí scroll đã chạm đến vị trí của vật thể
+			if (element_top_position <= window_bottom_position) {
+				element.addClass('scroll-active')
+			} else {
+				element.removeClass('scroll-active')
+			}
+		})
+
+		//order-form
+		var order_form_top_position = $('.order-form').offset().top
+		if (order_form_top_position <= window_bottom_position) {
+			$('.order-form').addClass('leftFadeIn')
+		} else {
+			$('.order-form').removeClass('leftFadeIn')
+		}
+		//article
+		var article_top_position = $('.home-news').offset().top
+		$.each(leftFadeIn, function() {
+			var element = $(this)
+			if (article_top_position <= window_bottom_position) {
+				element.addClass('leftFadeIn')
+			} else {
+				element.removeClass('leftFadeIn')
+			}
+		})
+		$.each(rightFadeIn, function() {
+			var element = $(this)
+			if (article_top_position <= window_bottom_position) {
+				element.addClass('rightFadeIn')
+			} else {
+				element.removeClass('rightFadeIn')
+			}
+		})
+			
+	})
 })

@@ -618,7 +618,7 @@ span.minus1 {
 /* ================================================ */
 
 /*===================== Container================== */
-.container1 {
+.container {
   position: relative;
   overflow: hidden;
 }
@@ -913,6 +913,7 @@ span.minus1 {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   z-index: 2;
+  position: relative;
 }
 
 .heading-order {
@@ -1118,7 +1119,6 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
   background: rgba(0, 0, 0, 0.4);
 }
 .footer-wrap > div {
@@ -2389,4 +2389,43 @@ h5 {
 }
 .layout-item:hover .layout-item-img img {
   transform: scale(1.07);
+}
+@media (min-width: 740px) {
+  /* scroll page effects */
+  .reveal {
+    position: relative;
+    transform: translateY(100px);
+    animation: all ease-in;
+    opacity: 0;
+  }
+  .reveal.scroll-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s;
+  }
+  .leftFadeIn {
+    animation: leftFadeIn 1.5s ease;
+  }
+  .rightFadeIn {
+    animation: rightFadeIn 1.5s ease;
+  }
+  .article .col {
+    position: relative;
+  }
+  @keyframes leftFadeIn {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  @keyframes rightFadeIn {
+    from {
+      left: 200%;
+    }
+    to {
+      left: 0;
+    }
+  }
 }
