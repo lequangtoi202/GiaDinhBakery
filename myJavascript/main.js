@@ -100,6 +100,7 @@ $(document).ready(function() {
 		$(document).click(function(e){
 			var historyArea = $('.search')
 			if(!historyArea.is(e.target) && historyArea.has(e.target).length === 0){
+				
 				$('.history').hide()
 				
 			}
@@ -112,6 +113,7 @@ $(document).ready(function() {
 		const textContent = $(this).val()
 		if(keyCode == '13'){
 			if (textContent != ''){
+				var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
 				let html = ''
 				html +=  `<li class="history-list-item">
 							<a href="product.html"><i class="fas fa-history"></i>${textContent}</a>
@@ -119,8 +121,8 @@ $(document).ready(function() {
 							</span>
 							</li>`
 				$('.history-list').append(html)
-				var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
 				arrList.length++
+				
 			}
 			//delete history list item
 			deleteHistorySearchItem()
@@ -132,6 +134,7 @@ $(document).ready(function() {
 		$('.search-btn').click(function() {
 			let textContent = $('.search-field').val()
 			if (textContent != ''){
+				var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
 				let html = ''
 				html +=  `<li class="history-list-item">
 							<a href="product.html"><i class="fas fa-history"></i>${textContent}</a>
@@ -139,7 +142,6 @@ $(document).ready(function() {
 							</span>
 							</li>`
 				$('.history-list').append(html)
-				var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
 				arrList.length++
 			}
 			//delete history list item
@@ -153,13 +155,15 @@ $(document).ready(function() {
 	
 	deleteHistorySearchItem()
 	function deleteHistorySearchItem(){
-		$('.delete').click(function() {
-			$(this).parent().remove()
+		$('.delete').click(function(e) {
+			
 			var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
+			$(this).parent().remove()
+			
+			arrList.length--
 			if(arrList.length == 0){
 				$('.history').hide()
 			}
-			arrList.length--
 		})
 	}
 	
@@ -540,7 +544,7 @@ $(document).ready(function() {
 	// Bấm bên trên thanh category
 	$('.cake1').click((event) => {
 		
-		event.preventDefaul
+		event.preventDefault()
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
