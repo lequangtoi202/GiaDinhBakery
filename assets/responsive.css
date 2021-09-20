@@ -109,11 +109,6 @@
     font-size: 2.1rem;
   }
 
-  .news-detail {
-    padding: 0 10px;
-    height: 115px;
-  }
-
   /* About */
   .about-us img {
     width: 100%;
@@ -134,7 +129,7 @@
   /* Footer */
 
   .footer-wrap > div {
-    padding: 10px 0 10px 15px;
+    padding: 10px 0 10px 10px;
   }
 
   .heading-title {
@@ -151,13 +146,10 @@
     line-height: 2.8rem;
   }
   .license-logo img {
-    width: 135px;
-    height: 57px;
+    width: 120px;
+    height: 50px;
   }
 
-  .footer-list > li > a {
-    display: inline-flex;
-  }
   .footer-list > li > a > img {
     width: 50px;
     height: 50px;
@@ -176,10 +168,6 @@
   .item__filter-img a,
   .item__filter-img a img {
     height: 200px;
-  }
-
-  .item__filter-heading-title-text {
-    font-size: 1.8rem;
   }
 
   .item__filter-price {
@@ -222,23 +210,23 @@
     padding: 0 20px;
     grid-template-columns: 1fr;
     justify-content: center;
-    grid-template-rows: repeat(4, 470px) 600px;
+    grid-template-rows: repeat(4, 430px) 500px;
     grid-template-areas: "h1" "h2" "h3" "h5" "h4";
   }
-  .layout-item:nth-child(4) {
-    grid-area: h4;
+  .layout-item:first-child {
+    grid-area: h1;
   }
   .layout-item:nth-child(2) {
     grid-area: h2;
   }
-  .layout-item:nth-child(5) {
-    grid-area: h5;
-  }
-  .layout-item:nth-child(5) {
-    grid-area: h5;
-  }
   .layout-item:nth-child(3) {
     grid-area: h3;
+  }
+  .layout-item:nth-child(5) {
+    grid-area: h5;
+  }
+  .layout-item:nth-child(4) {
+    grid-area: h4;
   }
   .layout-item-img img {
     height: 205px;
@@ -285,9 +273,7 @@
     font-size: 1.7rem;
   }
   /* home-news */
-  .news-detail {
-    height: 70px;
-  }
+
   /*  */
   .news-img img {
     height: 235px;
@@ -333,8 +319,6 @@
   }
 
   .item__filter-heading-title-text {
-    font-weight: 700;
-    font-size: 1.8rem;
     line-height: 2.6rem;
   }
 
@@ -376,7 +360,7 @@
   .layout-saleOff {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    grid-template-rows: 450px 465px 600px;
+    grid-template-rows: 430px 430px 600px;
     grid-template-areas: "h1 h2" "h3 h5" "h4 ...";
   }
   .layout-item:nth-child(4) {
@@ -396,5 +380,23 @@
 }
 
 /* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 1200px) {
+  .container {
+    max-width: inherit;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: inherit;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: inherit;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: inherit;
+  }
 }
