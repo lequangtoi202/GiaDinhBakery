@@ -868,7 +868,10 @@ $(document).ready(function() {
 	// chức năng đăng comment
 	const postComment = function() {
 
-		const comments = ['Bánh này rất ngon!:)', 'Bánh vừa đẹp vừa trông ngon nữa:)']
+		const comments = [
+			'Bánh này rất ngon!:)',
+			'Bánh vừa đẹp vừa trông ngon nữa:)'
+		]
 		const postArea = $('.postArea')
 		const input = $('.input-area')
 		const post = $('.post-comment')
@@ -877,7 +880,6 @@ $(document).ready(function() {
 			add(comment){
 				comments.push(comment)
 			},
-
 			// delete(index){
 			// 	comments.splice(index, 1);
 			// },
@@ -890,7 +892,6 @@ $(document).ready(function() {
 				postArea.html(html)
 				//Nếu cần xóa comment thì use this(<span class="delete" data-index='${index}'>&times</span>)
 			},
-
 			//xóa comment
 			// handleDelete(event){
 			// 	const deleteBtn = event.target.closest('.delete')
@@ -900,9 +901,8 @@ $(document).ready(function() {
 			// 		this.render()
 			// 	}
 			// },
-
 			init(){
-				var count = 2
+				var count = comments.length;
 				post.click(() => {
 					const cmt = input.val()
 					
@@ -1041,9 +1041,9 @@ $(document).ready(function() {
 		const reveals = $('.reveal')
 		const leftFadeIn = $('.scroll-left')
 		const rightFadeIn = $('.scroll-right')
-		const window_height = $(window).height()
-		const window_top_position = $(window).scrollTop()
-		const plusHeight = window_height - 100
+		const window_height = $(window).height()// chiều cao mà hình
+		const window_top_position = $(window).scrollTop()// vị trí scroll top
+		const plusHeight = window_height - 100// giảm chiều cao màn hình
 		const window_bottom_position = (window_top_position + plusHeight)
 		
 		$.each(reveals, function() {
@@ -1057,7 +1057,6 @@ $(document).ready(function() {
 				element.removeClass('scroll-active')
 			}
 		})
-
 		//order-form
 		var order_form_top_position = $('.order-form').offset().top
 		if (order_form_top_position <= window_bottom_position) {
