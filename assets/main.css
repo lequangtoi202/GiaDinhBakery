@@ -1086,6 +1086,9 @@ textarea {
   font-size: 2rem;
   padding-right: 3px;
 }
+img {
+  vertical-align: middle;
+}
 .footer-logo_img {
   position: relative;
   width: 130px;
