@@ -4,9 +4,11 @@ html {
 .m-4 {
   margin: 0 !important;
 }
-
-a:hover {
+.nav li a {
   color: #fff;
+  text-decoration: none;
+}
+a:hover {
   text-decoration: none;
 }
 .bttop {

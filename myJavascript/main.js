@@ -476,9 +476,7 @@ $(document).ready(function() {
 	renderProduct(product1)
 	
 	// Bấm bên trên thanh category
-	$('.cake1').click((event) => {
-		
-		event.preventDefault()
+	$('.cake1').click(() => {
 		let currentPage = 1;
 		start = 0;
 		end = perPage;
@@ -488,7 +486,7 @@ $(document).ready(function() {
 		changePage(product1);
 		renderProduct(product1);
 	})
-	$('.cake2').click((event) => {
+	$('.cake2').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -499,7 +497,7 @@ $(document).ready(function() {
 		changePage(product2);
 		renderProduct(product2);
 	})
-	$('.cake3').click((event) => {
+	$('.cake3').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -510,7 +508,7 @@ $(document).ready(function() {
 		changePage(product3);
 		renderProduct(product3);
 	})
-	$('.cake4').click((event) => {
+	$('.cake4').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -521,7 +519,7 @@ $(document).ready(function() {
 		changePage(product4);
 		renderProduct(product4);
 	})
-	$('.cake5').click((event) => {
+	$('.cake5').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -532,7 +530,7 @@ $(document).ready(function() {
 		changePage(product5);
 		renderProduct(product5);
 	})
-	$('.cake6').click((event) => {
+	$('.cake6').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -543,7 +541,7 @@ $(document).ready(function() {
 		changePage(product6);
 		renderProduct(product6);
 	})
-	$('.drink1').click((event) => {
+	$('.drink1').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -554,7 +552,7 @@ $(document).ready(function() {
 		changePage(drink1);
 		renderProduct(drink1);
 	})
-	$('.drink2').click((event) => {
+	$('.drink2').click(() => {
 		
 		let currentPg = 1;
 		start = 0;
@@ -565,7 +563,7 @@ $(document).ready(function() {
 		changePage(drink2);
 		renderProduct(drink2);
 	})
-	$('.drink3').click((event) => {
+	$('.drink3').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
@@ -576,7 +574,7 @@ $(document).ready(function() {
 		changePage(drink3);
 		renderProduct(drink3);
 	})
-	$('.drink5').click((event) => {
+	$('.drink5').click(() => {
 		
 		let currentPage = 1;
 		start = 0;
