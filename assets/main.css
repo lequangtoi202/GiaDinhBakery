@@ -4,7 +4,8 @@ html {
 .m-4 {
   margin: 0 !important;
 }
-.nav li a:hover {
+
+a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -362,6 +363,9 @@ ul > li > a {
   display: none;
   position: relative;
   top: 0;
+}
+.header-logo-mobile a {
+  text-align: center;
 }
 .header-logo-mobile img {
   width: 65px;
