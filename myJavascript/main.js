@@ -1043,7 +1043,7 @@ $(document).ready(function() {
 		const rightFadeIn = $('.scroll-right')
 		const window_height = $(window).height()// chiều cao mà hình
 		const window_top_position = $(window).scrollTop()// vị trí scroll top
-		const plusHeight = window_height - 100// giảm chiều cao màn hình
+		const plusHeight = window_height - 60// giảm chiều cao màn hình
 		const window_bottom_position = (window_top_position + plusHeight)
 		
 		$.each(reveals, function() {
