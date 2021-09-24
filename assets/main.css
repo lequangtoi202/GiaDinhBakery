@@ -2029,7 +2029,7 @@ h5 {
   width: 100%;
   font-size: 1.5rem;
   padding: 0 7px;
-  margin-top: 8px;
+  margin: 8px 0 2px 0;
   border: 1px solid #ccc;
   border-radius: 3px;
   outline: none;
@@ -2051,6 +2051,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 .account-btn-controls button {
   width: 120px;
@@ -2094,7 +2095,17 @@ h5 {
 .hover:hover::after {
   width: 100%;
 }
-
+.form-message {
+  font-size: 1.3rem;
+  padding-left: 7px;
+  margin-top: 2px;
+}
+.account-form-gr.invalid .form-control {
+  border-color: #f33a58;
+}
+.account-form-gr.invalid .form-message {
+  color: #f33a58;
+}
 /* ========================================== */
 
 /* =========BRANCH.HTML============= */
