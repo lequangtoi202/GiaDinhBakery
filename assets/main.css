@@ -388,9 +388,6 @@ ul > li > a {
   padding-right: 25px;
   cursor: pointer;
 }
-.header-search-checkbox:checked ~ .header-with-search {
-  display: block;
-}
 
 .mobile-main-menu-wrap {
   top: -70px;
@@ -1044,6 +1041,7 @@ textarea {
 }
 .heading-title {
   font-size: 1.9rem;
+  line-height: 2.5rem;
   color: var(--color-white);
   text-transform: uppercase;
   font-weight: 700;
@@ -1095,11 +1093,14 @@ textarea {
 img {
   vertical-align: middle;
 }
+.footer-logo a {
+  display: block;
+  text-align: center;
+}
 .footer-logo_img {
   position: relative;
   width: 130px;
   height: 130px;
-  left: 40px;
   border-radius: 50%;
 }
 .footer-list > li > a > img {
@@ -2090,7 +2091,7 @@ h5 {
 .hover::after {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 2px;
   bottom: 0;
   left: 0;
   width: 0;

@@ -2,23 +2,18 @@ $(document).ready(function() {
    //create btn back to top
    $(window).scroll(function () { 
 		var pos = $('html, body').scrollTop()
-		if(pos > 1000)
-		{
+		if(pos > 1000){
 			$('.bttop').show()
 		}else{
 			$('.bttop').hide()
-			
 		}
 		
 	})
 
 	$(".bttop").click(function (e){
-		$('html, body').animate(
-			{
-				scrollTop: 0,
-				behavior: 'smooth'
-			},0)
-		
+		$('html, body').animate({
+			scrollTop: 0,
+		},0)
 	})
 
 	//liên kết news khi trên mobile
@@ -132,7 +127,9 @@ $(document).ready(function() {
 			$('.menu-mobile-overlay').show()
 		}
 	})
-
+	$('.header-mobile-search').click(function(){
+		$('.header-with-search').toggleClass('search-display')
+	})
 
 	// accordion
 	// Cakes
@@ -363,13 +360,9 @@ $(document).ready(function() {
 
 	//danh mục trong product.html
 	$('.product-category-item').click(function() {
-		//if (!$(this).hasClass('product-category-item-active')){
-			//$('.product-category-item').removeClass('product-category-item-active');
-			//$(this).addClass('product-category-item-active');
-			let text = $(this).text()
-			$('.product-title-text').text(text)
-			$('.product-layout-title-text').text(text)
-		//}
+		let text = $(this).text()
+		$('.product-title-text').text(text)
+		$('.product-layout-title-text').text(text)
 	})
 	//thanh category trên PC
 	$('.dropdown-item').click(function() {
@@ -1037,8 +1030,6 @@ $(document).ready(function() {
 	// SCROLL EFFECT
 	$(window).on('scroll',() => {
 		const reveals = $('.reveal')
-		const leftFadeIn = $('.scroll-left')
-		const rightFadeIn = $('.scroll-right')
 		const window_height = $(window).height()// chiều cao mà hình
 		const window_top_position = $(window).scrollTop()// vị trí scroll top
 		const plusHeight = window_height - 60// giảm chiều cao màn hình
@@ -1055,33 +1046,7 @@ $(document).ready(function() {
 				element.removeClass('scroll-active')
 			}
 		})
-		//order-form
-		var order_form_top_position = $('.order-form').offset().top
-		if (order_form_top_position <= window_bottom_position) {
-			$('.order-form').addClass('leftFadeIn')
-		} else {
-			$('.order-form').removeClass('leftFadeIn')
-		}
-		//article
-		var article_top_position = $('.home-news').offset().top
-		$.each(leftFadeIn, function() {
-			var element = $(this)
-			if (article_top_position <= window_bottom_position) {
-				element.addClass('leftFadeIn')
-			} else {
-				element.removeClass('leftFadeIn')
-			}
-		})
-		$.each(rightFadeIn, function() {
-			var element = $(this)
-			if (article_top_position <= window_bottom_position) {
-				element.addClass('rightFadeIn')
-			} else {
-				element.removeClass('rightFadeIn')
-			}
-		})
+		
 			
 	})
-
-	
 })
