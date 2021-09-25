@@ -27,31 +27,27 @@ $(document).ready(function() {
 		$('.history').show()
 
 		$(document).click(function(e){
-			var historyArea = $('.search')
-			if(!historyArea.is(e.target) && historyArea.has(e.target).length === 0){
+			const searchArea = $('.search')
+			if(!searchArea.is(e.target) && searchArea.has(e.target).length === 0){
 				
 				$('.history').hide()
-				
 			}
 		})
 	})
 	
-
+	var arrList = $('.history-list-item')
 	$('.search-field').keyup(function (e) { 
 		var keyCode = (e.keyCode ? e.keyCode : e.which) //which là lấy mã trong FI những browser khác hỗ trợ cả 2
 		const textContent = $(this).val()
 		if(keyCode == '13'){
 			if (textContent != ''){
-				var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
 				let html = ''
 				html +=  `<li class="history-list-item">
 							<a href="product.html"><i class="fas fa-history"></i>${textContent}</a>
-							<span class="delete">&times;
-							</span>
+							<span class="delete">&times;</span>
 							</li>`
 				$('.history-list').append(html)
 				arrList.length++
-				
 			}
 			//delete history list item
 			deleteHistorySearchItem()
@@ -63,7 +59,7 @@ $(document).ready(function() {
 		$('.search-btn').click(function() {
 			let textContent = $('.search-field').val()
 			if (textContent != ''){
-				var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
+				
 				let html = ''
 				html +=  `<li class="history-list-item">
 							<a href="product.html"><i class="fas fa-history"></i>${textContent}</a>
@@ -84,11 +80,10 @@ $(document).ready(function() {
 	
 	deleteHistorySearchItem()
 	function deleteHistorySearchItem(){
-		$('.delete').click(function(e) {
+		$('.delete').on('click', function(e) {
 			
-			var arrList = $('.history-list-item')//query lại để lấy số lượng thẻ
+			//query lại để lấy số lượng thẻ
 			$(this).parent().remove()
-			
 			arrList.length--
 			if(arrList.length == 0){
 				$('.history').hide()
@@ -421,21 +416,21 @@ $(document).ready(function() {
 		const content = pro.map((item, index) => {
 			if (index >= start && index < end){
 				html += `<div class="col l-4 m-4 c-6">
-					<div class="item__filter">
-					<div class="item__filter-img">
-					<a class="link-img" href="detail.html"><img src= ${item.image}></a>
-					</div>
-					<div class="item__filter-info">
-					<div class="item__filter-heading-title">
-					<a href="detail.html" class="item__filter-heading-title-text">${item.title}</a>
-					<p class="item__filter-heading-title-code">${item.code}</p>
-					</div>
-					<div class="item__filter-price-action">
-					<div class="item__filter-price">${item.price}</div>
-					<button class="item__filter-cart-buy"><i class="fas fa-shopping-cart"></i></button>
-					</div>
-					</div>
-					</div>
+						<div class="item__filter">
+							<div class="item__filter-img">
+								<a class="link-img" href="detail.html"><img src= ${item.image}></a>
+							</div>
+							<div class="item__filter-info">
+								<div class="item__filter-heading-title">
+									<a href="detail.html" class="item__filter-heading-title-text">${item.title}</a>
+									<p class="item__filter-heading-title-code">${item.code}</p>
+								</div>
+								<div class="item__filter-price-action">
+									<div class="item__filter-price">${item.price}</div>
+									<button class="item__filter-cart-buy"><i class="fas fa-shopping-cart"></i></button>
+								</div>
+							</div>
+						</div>
 					</div>`
 			}
 			$('#product').html(html)
@@ -444,12 +439,10 @@ $(document).ready(function() {
 	function changePage(product1){
 		const currentPages = $('.number-page .pagination-item')
 		for (let i = 0; i < currentPages.length; i++){
-			$(currentPages[i]).click(function (event)
-			{
+			$(currentPages[i]).click(function (event){
 				event.preventDefault()
-				let val  = i + 1
-			
 				const current = $('.pagination-item--active')
+				let val  = i + 1
 				$(current[0]).removeClass('pagination-item--active')
 				$(this).addClass('pagination-item--active')
 				currentPage = val
@@ -458,7 +451,6 @@ $(document).ready(function() {
 			})
 		}
 	}
-
 
 	let currentPage = 1
 	start = 0
@@ -764,9 +756,12 @@ $(document).ready(function() {
 		$('.product-title-text').text(text)
 	})
 	
-	const items = [
-		{title: 'CARAMEL AND CHOCOLATE CAKE MOUSSE VUÔNG', code: 'CM003', price: 220000, quantity: 1}
-	]
+	const items = [{
+			title: 'CARAMEL AND CHOCOLATE CAKE MOUSSE VUÔNG', 
+			code: 'CM003', 
+			price: 220000, 
+			quantity: 1
+	}]
 
 	function updateQuantity(index, quantity){
 		if (quantity < 1){
@@ -784,35 +779,35 @@ $(document).ready(function() {
 		$('#total').text(`${total}đ`)
 
 		const html = items.map(item => `
-		<div class="product-detail--title">
-			<h3>${item.title}</h3>
-			<p>Mã sản phẩm: <span class="product-detail--code">${item.code}</span></p>
-		</div>
-		<div class="product-detail-book--wrap">
-			<div class="product-detail_info-price">
-				<span>Giá:</span>
-				<span class="product-detail--price">${item.price.toLocaleString('de-DE')}đ/</span>
+			<div class="product-detail--title">
+				<h3>${item.title}</h3>
+				<p>Mã sản phẩm: <span class="product-detail--code">${item.code}</span></p>
 			</div>
-			<div class="product-detail-book">
-				<div class="dimension">
-					<span>Kích thước:</span><span class="dimen dimension-active">19cm</span><span class="dimen">21cm</span><span class="dimen">25cm</span>
+			<div class="product-detail-book--wrap">
+				<div class="product-detail_info-price">
+					<span>Giá:</span>
+					<span class="product-detail--price">${item.price.toLocaleString('de-DE')}đ/</span>
 				</div>
-				
-				<span>Số lượng:</span>
-				<span class="quantity-selection">
-					<button class="dec">-</button>
-					<input type="number" class="quantity" value="${item.quantity}">
-					<button class="inc">+</button>
-				</span>
-				<div class="order-summary">
-					<p>Tổng tiền:<span id="total" class="money">${(item.quantity * item.price).toLocaleString('de-DE')}đ</span></p>
+				<div class="product-detail-book">
+					<div class="dimension">
+						<span>Kích thước:</span><span class="dimen dimension-active">19cm</span><span class="dimen">21cm</span><span class="dimen">25cm</span>
+					</div>
+					
+					<span>Số lượng:</span>
+					<span class="quantity-selection">
+						<button class="dec">-</button>
+						<input type="number" class="quantity" value="${item.quantity}">
+						<button class="inc">+</button>
+					</span>
+					<div class="order-summary">
+						<p>Tổng tiền:<span id="total" class="money">${(item.quantity * item.price).toLocaleString('de-DE')}đ</span></p>
+					</div>
+					<div class="button-buy-product">
+						<span><button class="add-to-cart">Thêm vào giỏ</button></span>
+						<span><button class="buy-it">Mua ngay</button></span>
+					</div>
 				</div>
-				<div class="button-buy-product">
-					<span><button class="add-to-cart">Thêm vào giỏ</button></span>
-					<span><button class="buy-it">Mua ngay</button></span>
-				</div>
-			</div>
-		</div>`).join('')
+			</div>`).join('')
 		$('.product-book-wrap').html(html)
 
 
@@ -922,7 +917,6 @@ $(document).ready(function() {
 	const policies = $('.footer-item a');
 	for (let i = 0; i < policies.length; i++){
 		$(policies[i]).on('click', (event) => {
-			
 			const Class = $(policies[i]).attr('class')// lấy class
 			const policyId = $('.policy')
 			var text = $(policies[i]).text()
@@ -970,8 +964,7 @@ $(document).ready(function() {
 	]
 	
 	function load(){
-		for (let i = 0; i < responsive.length; i++)
-		{
+		for (let i = 0; i < responsive.length; i++){
 			if($(window).innerWidth() > responsive[i].breakPoint.width){
 				slideItems = responsive[i].breakPoint.item
 			}
@@ -997,11 +990,11 @@ $(document).ready(function() {
 		let html = ''
 
 		for(let i = 1; i <= allSlides;i++){
-			if(i == 1){
+			if(i == 1)
 				html += `<li id="${i}" class="btn-active">${i}</li>`
-			}else{
+			else
 				html += `<li id="${i}">${i}</li>`
-			}
+			
 		}
 		ul.html(html)
 
@@ -1009,7 +1002,7 @@ $(document).ready(function() {
 		$('.ul-controls > li').click(function(){
 			const ul = controls.children()
 			const li = ul.children()
-			var active = 0
+			var active = 0;
 	
 			for(let i = 0;i < li.length; i++){
 				if($(li[i]).hasClass("btn-active")){
@@ -1046,7 +1039,5 @@ $(document).ready(function() {
 				element.removeClass('scroll-active')
 			}
 		})
-		
-			
 	})
 })

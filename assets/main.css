@@ -8,6 +8,9 @@ html {
   color: #fff;
   text-decoration: none;
 }
+button:focus {
+  outline: none;
+}
 a:hover {
   text-decoration: none;
 }
