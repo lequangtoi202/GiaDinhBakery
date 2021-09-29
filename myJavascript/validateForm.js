@@ -16,7 +16,6 @@ function Validator(options) {
     function validate(inputElement, rule) {
         var errorElement = getParentElement(inputElement, options.formGroupSelector).querySelector(options.errorSelector);
         var errorMessage = rule.test(inputElement.value);
-
         var rules = selectorRules[rule.selector]// ;ấy các hàm của ô iput tương ứng
 
         //Lặp qua từng rules và check
@@ -33,7 +32,6 @@ function Validator(options) {
             errorElement.innerText = '';
             inputElement.parentElement.classList.remove('invalid')
         }
-
         return !errorMessage;
     }
 

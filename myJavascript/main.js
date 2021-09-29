@@ -757,10 +757,10 @@ $(document).ready(function() {
 	})
 	
 	const items = [{
-			title: 'CARAMEL AND CHOCOLATE CAKE MOUSSE VUÔNG', 
-			code: 'CM003', 
-			price: 220000, 
-			quantity: 1
+		title: 'CARAMEL AND CHOCOLATE CAKE MOUSSE VUÔNG', 
+		code: 'CM003', 
+		price: 220000, 
+		quantity: 1
 	}]
 
 	function updateQuantity(index, quantity){

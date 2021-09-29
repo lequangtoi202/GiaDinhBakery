@@ -497,7 +497,9 @@
                 Validator.isRequired('#username'),
                 Validator.isRequired('#email'),
                 Validator.isEmail('#email'),
+                Validator.isRequired('#password'),
                 Validator.minLength('#password', 6),
+                Validator.isRequired('#password-confirmation'),
                 Validator.isConfirmed('#password-confirmation', function() {
                     return document.querySelector('#form-1 #password').value
                 }, 'Mật khẩu không chính xác')
