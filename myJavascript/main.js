@@ -81,7 +81,6 @@ $(document).ready(function() {
 	deleteHistorySearchItem()
 	function deleteHistorySearchItem(){
 		$('.delete').on('click', function(e) {
-			
 			//query lại để lấy số lượng thẻ
 			$(this).parent().remove()
 			arrList.length--
@@ -111,7 +110,6 @@ $(document).ready(function() {
 	})
 
 
-	
 	// menu-mobile-overlay and mobile-main-menu
 	$(window).resize(function() {
 		var viewportWidth = $(window).width()
@@ -168,16 +166,9 @@ $(document).ready(function() {
 		$('.modal').hide()
 	})
 	$('.btn-sign-up').hover(function () {
-			// over
-			$(this).css('background-color', '#b5bd0a')
-		}, function () {
-			// out
-			$(this).css('background-color', 'var(--primary-color)')
-		}
-	)
-
-
-
+		// over
+		$(this).css('background-color', '#b5bd0a')
+	})
 
 	//===========PRODUCT PAGE==========
 	//data of product
@@ -587,20 +578,16 @@ $(document).ready(function() {
 		// btnNext.click(() => {
 		// 	currentPage++;
 		// 	console.log("cake 1",currentPage,totalPages );
-
 		// 	if (currentPage > totalPages){
 		// 		currentPage = totalPages;
 		// 	}
-
 		// 	if (currentPage === totalPages){
 		// 		console.log("cake 1 max",currentPage,totalPages );
-
 		// 		btnNext.addClass('btn-active');
 		// 	}
 		// 	btnPrev.removeClass('btn-active');	
 		// 	$('.number-page .pagination-item').removeClass('pagination-item--active');
 		// 	$(`.number-page .pagination-item:eq(${currentPage - 1})`).addClass('pagination-item--active');
-
 		// 	getCurrentPage1(currentPage);
 		// 	renderProduct1();
 		// });
@@ -611,16 +598,12 @@ $(document).ready(function() {
 		// 	{
 		// 		currentPage = 1;
 		// 	}
-	
 		// 	if (currentPage === 1) {
 		// 		btnPrev.addClass('btn-active');
 		// 	}
 		// 	btnNext.removeClass('btn-active');
 		// 	$('.number-page .pagination-item').removeClass('pagination-item--active');
-	
 		// 	$(`.number-page .pagination-item:eq(${currentPage - 1})`).addClass('pagination-item--active');
-	
-			
 		// 	getCurrentPage1(currentPage);
 		// 	renderProduct1();
 		// });
@@ -736,10 +719,6 @@ $(document).ready(function() {
 		renderProduct(drink5);
 	})
 
-
-
-
-
 	// ====================PRODUCT DETAIL==========
 
 	const imgDetail = $('.product-img img')
@@ -815,7 +794,6 @@ $(document).ready(function() {
 		const increseButton = $('.inc')
 		const decreaseButton = $('.dec')
 		for (let i = 0; i < increseButton.length; i++){
-
 			decreaseButton.click(() => {
 				updateQuantity(i, items[i].quantity - 1) 
 			})
@@ -831,7 +809,6 @@ $(document).ready(function() {
 				if (!$(dimension[i]).hasClass('dimension-active')){
 					$('.dimension .dimen').removeClass('dimension-active')
 					$(dimension[i]).addClass('dimension-active')
-					
 				}
 			})
 		}
@@ -853,7 +830,6 @@ $(document).ready(function() {
 	
 	// chức năng đăng comment
 	const postComment = function() {
-
 		const comments = [
 			'Bánh này rất ngon!:)',
 			'Bánh vừa đẹp vừa trông ngon nữa:)'
