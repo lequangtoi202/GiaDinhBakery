@@ -1531,6 +1531,7 @@ h5 {
   border: none;
   width: 28%;
   height: 40px;
+  padding: 0;
   position: relative;
   left: -10px;
   border-top-right-radius: 10px;

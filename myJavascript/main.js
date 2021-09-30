@@ -7,7 +7,6 @@ $(document).ready(function() {
 		}else{
 			$('.bttop').hide()
 		}
-		
 	})
 
 	$(".bttop").click(function (e){
